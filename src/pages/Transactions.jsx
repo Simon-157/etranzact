@@ -13,9 +13,7 @@ const Transactions = () => {
   const [filters, setFilters] = useState({ type: "", status: "" });
   // const { user } = useAuthStore()
   const user = JSON.parse(localStorage.getItem("user"));
-  console.log("====================================");
-  console.log("user", user?.token);
-  console.log("====================================");
+
 
   useEffect(() => {
     if (!user) {
