@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { replace, useNavigate } from 'react-router-dom';
 import apiService from "../api/auth.service"
 import useAuthStore from '../store/authStore';
 import '../css/login.css'
@@ -28,7 +28,7 @@ const LoginPage = () => {
             if (res.token) {
                 login(res)
                 setIsLoading(false)
-                navigate('/transactions')
+                navigate('/transactions', {replace: true})
             }
         } catch (error) {
             setError(error)
