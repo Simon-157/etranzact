@@ -5,6 +5,7 @@ const BaseLayout = ({ children }) => {
   return (
     <div className="base-layout">
       <div className="sidebar">
+        {/* TODO: I WILL PUT DUMMY NAV ITEMS HERE */}
        
       </div>
       <div className="main-content">

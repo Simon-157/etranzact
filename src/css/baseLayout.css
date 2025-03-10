@@ -39,6 +39,10 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.top-bar input {
+    outline: none;
+}
+
 .search-input {
     padding: 5px;
     font-size: 16px;
